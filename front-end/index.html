@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TASK-4</title>
+  
+    <link rel="stylesheet" href="./style/main.css">
+  </head>
+<script>
+  const token = window.localStorage.getItem("token")
+  if(!token){
+    window.location.href = "./login.html"
+  }
+</script>
+<body>
+<h2>USERS</h2>
+<div class="table-wrapper">
+    <table class="fl-table">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>FULL-NAME</th>
+            <th>USERNAME</th>
+            <th>EMAIL</th>
+            <th>CREATE DATE</th>
+            <th>LAST BEEN DATE</th>
+            <th>STATUS</th>
+            <th>SELECT</th>
+        </tr>
+        </thead>
+        <tbody id="tbody">
+
+        <tbody>
+    </table>
+</div>
+<div class="middle-buttons">
+    <button class="button-4"   role="button" id="deleteBtn">DELETE</button>
+    <button class="button-4" role="button" id="blockBtn">BLOCK</button>
+    <button class="button-4" role="button" id="unblockBtn">UNBLOCK</button>
+</div>
+<script src="./js/utils.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>
